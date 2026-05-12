@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Bio Page - Task 01</title>
+    <!-- Linking our external CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 
+        The <header> tag represents introductory content. 
+        Good for SEO and accessibility! 
+    -->
+    <header>
+        <h1>Alex Dev</h1>
+        <p>Full-Stack Developer & Tech Educator</p>
+    </header>
+
+    <!-- 
+        The <main> tag contains the primary content of the page. 
+        There should only be one <main> per page.
+    -->
+    <main>
+        <!-- 
+            <section> is a semantic tag to group related content.
+            We use it here to separate "About Me" from other parts.
+        -->
+        <section id="about">
+            <h2>About Me</h2>
+            <div class="bio-container">
+                <!-- 
+                    A placeholder image for the profile. 
+                    In real projects, use a real path like "images/profile.jpg"
+                -->
+                <img src="https://via.placeholder.com/150" alt="Profile Picture" class="profile-img">
+                <div class="bio-text">
+                    <p>
+                        Hello! I'm a software engineer who loves building clean and functional web applications. 
+                        I specialize in Java, Spring Boot, and now I'm mastering the frontend!
+                    </p>
+                    <p>
+                        When I'm not coding, you can find me hiking or reading about the latest AI trends.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>Java & Spring Boot</li>
+                <li>HTML5 & CSS3</li>
+                <li>Problem Solving</li>
+                <li>Technical Writing</li>
+            </ul>
+        </section>
+    </main>
+
+    <!-- <footer> typically contains contact info, copyrights, etc. -->
+    <footer>
+        <p>&copy; 2024 Alex Dev. Built for learning.</p>
+    </footer>
+</body>
+</html>

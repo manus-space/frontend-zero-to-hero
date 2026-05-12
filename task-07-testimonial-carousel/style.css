@@ -1,0 +1,111 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f9fafb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.testimonials {
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 40px;
+    color: #111827;
+}
+
+/* 
+   Carousel Container:
+   The 'overflow: hidden' is key! It hides the slides that are out of view.
+*/
+.carousel-container {
+    overflow: hidden;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    padding: 40px;
+    position: relative;
+}
+
+/* 
+   Carousel Track:
+   This holds all slides in a single long row.
+   We animate this track to move left and right.
+*/
+.carousel-track {
+    display: flex;
+    width: 300%; /* 3 slides, each 100% of container */
+    animation: slide 10s infinite;
+}
+
+.testimonial-card {
+    width: 100%;
+    padding: 0 20px;
+    flex-shrink: 0;
+}
+
+.quote {
+    font-size: 1.25rem;
+    font-style: italic;
+    color: #374151;
+    margin-bottom: 30px;
+}
+
+.quote::before {
+    content: '"';
+    font-size: 3rem;
+    color: #e5e7eb;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.author {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.author img {
+    border-radius: 50%;
+}
+
+.author div {
+    text-align: left;
+}
+
+.author strong {
+    display: block;
+    color: #111827;
+}
+
+.author span {
+    font-size: 0.85rem;
+    color: #6b7280;
+}
+
+/* 
+   CSS Animation:
+   We move the track horizontally.
+   0% to 33% -> Slide 1
+   33% to 66% -> Slide 2
+   66% to 100% -> Slide 3 (which looks like Slide 1)
+*/
+@keyframes slide {
+    0%, 20% { transform: translateX(0); }
+    33%, 53% { transform: translateX(-33.33%); }
+    66%, 86% { transform: translateX(-66.66%); }
+    100% { transform: translateX(0); }
+}
