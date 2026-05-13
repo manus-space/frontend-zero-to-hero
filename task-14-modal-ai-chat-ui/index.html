@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal + AI Chat - Task 14</title>
+    <link rel="stylesheet" href="/src/style.css">
+</head>
+<body class="bg-gray-50 dark:bg-slate-950">
+    <!-- Main Content -->
+    <div class="min-h-screen flex items-center justify-center p-4">
+        <button id="openModal" class="px-6 py-3 bg-blue-600 text-white rounded-lg font-semibold hover:bg-blue-700 transition">
+            Open AI Chat
+        </button>
+    </div>
+
+    <!-- Modal Backdrop -->
+    <div id="modalBackdrop" class="hidden fixed inset-0 bg-black/50 backdrop-blur-sm z-40 transition-opacity"></div>
+
+    <!-- Modal -->
+    <div id="modal" class="hidden fixed inset-0 flex items-center justify-center p-4 z-50 transition-all">
+        <div class="bg-white dark:bg-slate-900 rounded-2xl shadow-2xl w-full max-w-2xl h-96 md:h-[32rem] flex flex-col border border-gray-200 dark:border-slate-800 animate-in fade-in zoom-in duration-300">
+            <!-- Modal Header -->
+            <div class="flex items-center justify-between p-6 border-b border-gray-200 dark:border-slate-800">
+                <h2 class="text-xl font-bold text-gray-900 dark:text-white">AI Assistant</h2>
+                <button id="closeModal" class="text-gray-500 hover:text-gray-700 dark:hover:text-gray-300 transition">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Chat Area -->
+            <div id="chatContainer" class="flex-1 overflow-y-auto p-6 space-y-4">
+                <!-- AI Message -->
+                <div class="flex justify-start">
+                    <div class="bg-gray-100 dark:bg-slate-800 text-gray-900 dark:text-white rounded-lg rounded-tl-none px-4 py-3 max-w-xs">
+                        <p>Hello! How can I help you today?</p>
+                    </div>
+                </div>
+
+                <!-- User Message -->
+                <div class="flex justify-end">
+                    <div class="bg-blue-600 text-white rounded-lg rounded-tr-none px-4 py-3 max-w-xs">
+                        <p>How do I get started with your platform?</p>
+                    </div>
+                </div>
+
+                <!-- AI Message -->
+                <div class="flex justify-start">
+                    <div class="bg-gray-100 dark:bg-slate-800 text-gray-900 dark:text-white rounded-lg rounded-tl-none px-4 py-3 max-w-xs">
+                        <p>Great question! You can start by signing up for a free account. We offer a 14-day free trial with full access to all features.</p>
+                    </div>
+                </div>
+
+                <!-- User Message -->
+                <div class="flex justify-end">
+                    <div class="bg-blue-600 text-white rounded-lg rounded-tr-none px-4 py-3 max-w-xs">
+                        <p>That sounds perfect! What's included?</p>
+                    </div>
+                </div>
+
+                <!-- AI Message with Typing -->
+                <div class="flex justify-start">
+                    <div class="bg-gray-100 dark:bg-slate-800 text-gray-900 dark:text-white rounded-lg rounded-tl-none px-4 py-3">
+                        <div class="flex gap-1">
+                            <div class="w-2 h-2 bg-gray-400 rounded-full animate-bounce"></div>
+                            <div class="w-2 h-2 bg-gray-400 rounded-full animate-bounce" style="animation-delay: 0.1s;"></div>
+                            <div class="w-2 h-2 bg-gray-400 rounded-full animate-bounce" style="animation-delay: 0.2s;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Input Area -->
+            <div class="p-6 border-t border-gray-200 dark:border-slate-800">
+                <div class="flex gap-3">
+                    <input 
+                        type="text" 
+                        placeholder="Type your message..." 
+                        class="flex-1 px-4 py-3 rounded-lg border border-gray-300 dark:border-slate-700 bg-white dark:bg-slate-800 text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    >
+                    <button class="px-4 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition font-semibold">
+                        Send
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const openBtn = document.getElementById('openModal');
+        const closeBtn = document.getElementById('closeModal');
+        const modal = document.getElementById('modal');
+        const backdrop = document.getElementById('modalBackdrop');
+
+        openBtn.addEventListener('click', () => {
+            modal.classList.remove('hidden');
+            backdrop.classList.remove('hidden');
+        });
+
+        closeBtn.addEventListener('click', () => {
+            modal.classList.add('hidden');
+            backdrop.classList.add('hidden');
+        });
+
+        backdrop.addEventListener('click', () => {
+            modal.classList.add('hidden');
+            backdrop.classList.add('hidden');
+        });
+    </script>
+
+    <script type="module" src="/src/main.js"></script>
+</body>
+</html>
