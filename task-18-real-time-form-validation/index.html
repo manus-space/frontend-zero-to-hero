@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 18: Real-time Form Validation</title>
+    <link rel="stylesheet" href="/src/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>📋 Form Validation</h1>
+        <p>Fill out the form with real-time validation feedback</p>
+
+        <form id="validationForm">
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" placeholder="At least 3 characters">
+                <span class="error" id="usernameError"></span>
+                <span class="success" id="usernameSuccess"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Valid email address">
+                <span class="error" id="emailError"></span>
+                <span class="success" id="emailSuccess"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="At least 8 characters">
+                <span class="error" id="passwordError"></span>
+                <span class="success" id="passwordSuccess"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="confirm">Confirm Password</label>
+                <input type="password" id="confirm" placeholder="Must match password">
+                <span class="error" id="confirmError"></span>
+                <span class="success" id="confirmSuccess"></span>
+            </div>
+
+            <button type="submit" class="btn btn-primary" id="submitBtn" disabled>Submit</button>
+        </form>
+
+        <div class="validation-status">
+            <p><strong>Form Status:</strong> <span id="formStatus">Invalid</span></p>
+        </div>
+    </div>
+
+    <script type="module" src="/src/main.js"></script>
+</body>
+</html>
