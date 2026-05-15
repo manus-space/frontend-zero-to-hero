@@ -21,6 +21,25 @@ This batch focuses on **Tailwind CSS** and building real-world SaaS components a
 | 13 | [SaaS Dashboard](./task-13-saas-dashboard-layout) | Sidebar layout, stats cards, tables, complex layouts |
 | 14 | [Modal + AI Chat](./task-14-modal-ai-chat-ui) | Modal animations, chat bubbles, scroll behavior, transitions |
 | 15 | [Complete Landing Page](./task-15-complete-saas-landing-page) | Full integration, component thinking, mobile perfection |
+| 16 | Theme Toggle + Counter | DOM manipulation, localStorage, event listeners, classList |
+| 17 | Todo List CRUD | Array operations, dynamic HTML, CRUD operations |
+| 18 | Real-time Form Validation | Input events, regex validation, form state management |
+| 19 | Fetch Data & Render List | async/await, fetch API, JSON, error handling |
+| 20 | Search + Filter System | Real-time filtering, array methods, dynamic rendering |
+| 21 | LocalStorage Persistence | localStorage API, JSON serialization, data persistence |
+| 22 | Image Gallery + Lightbox | Grid layout, modal implementation, event handling |
+| 23 | Simple Kanban (Drag & Drop) | HTML5 Drag & Drop API, event handling |
+| 24 | Mock API Simulation | Promises, async/await, try/catch error handling |
+| 25 | Prompt History Tracker | Complex state management, data aggregation, persistence |
+| 26 | ES6 Modules + Calculator | import/export, module organization, file structure |
+| 27 | Pomodoro Timer | setInterval, state machine, UI sync |
+| 28 | TypeScript Todo List | Basic types, interfaces, type safety |
+| 29 | Typed SaaS Data Models | User, Subscription, ChatMessage interfaces |
+| 30 | Type-safe Form Handling | Form with TS, type guards, error typing |
+| 31 | Full TypeScript Small App | TS config, strict mode, better DX |
+| 32 | Generic Utility Functions | Generics, utility types, reusable functions |
+| 33 | Async Data Fetching with TS | Typed fetch responses, error handling |
+| 34 | TypeScript + LocalStorage | Typed persistence layer, JSON serialization |
 
 ## Getting Started
 
