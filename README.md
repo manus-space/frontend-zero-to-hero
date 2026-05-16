@@ -40,6 +40,30 @@ This batch focuses on **Tailwind CSS** and building real-world SaaS components a
 | 32 | Generic Utility Functions | Generics, utility types, reusable functions |
 | 33 | Async Data Fetching with TS | Typed fetch responses, error handling |
 | 34 | TypeScript + LocalStorage | Typed persistence layer, JSON serialization |
+| 35 | First React Counter + Theme Toggle | JSX, useState, component structure |
+| 36 | Reusable Components (Button, Card) | Props, children, component composition |
+| 37 | React Todo List (useState + CRUD) | State lifting, list rendering, keys |
+| 38 | React Form + Validation | Controlled forms, onSubmit handling |
+| 39 | useEffect + Data Fetching | Side effects, loading & error states, cleanup |
+| 40 | Custom Hook: useLocalStorage | Custom hooks, encapsulation, reusability |
+| 41 | Custom Hook: useDebounce | Custom hooks, performance optimization |
+| 42 | React Context for Theme | Context API, Provider pattern |
+| 43 | React Context for Auth (Mock) | Global state with Context, multi-context usage |
+| 44 | React Router Basics | Routes, nested layout, navigation |
+| 45 | Protected Routes in React Router | Authentication guard, redirect logic |
+| 46 | React List + Keys Optimization | Performance with keys, conditional rendering |
+| 47 | useReducer for Complex State | useReducer, dispatch actions, complex state management |
+| 48 | React + Tailwind Component Library | Full styled component library, variant props |
+| 49 | React Error Boundary + Loading Skeleton | Error handling in React, skeleton UI pattern |
+| 50 | Next.js App Router + Server Components | App Router, Server vs Client components, metadata |
+| 51 | Next.js Layouts & Nested Routes | Root layout, page-specific layouts, route organization |
+| 52 | Next.js Server Actions | Server Actions, progressive enhancement, form handling |
+| 53 | Next.js API Routes / Route Handlers | Route handlers, mock backend, RESTful API patterns |
+| 54 | Next.js + TypeScript Full Integration | TS in Next.js, type-safe server components |
+| 55 | Next.js Data Fetching (Server & Client) | fetch in server components, loading.js, error.js |
+| 56 | Next.js Middleware + Auth Guard | Middleware, protected routes, authentication patterns |
+| 57 | Next.js + Mock SaaS Dashboard | Full dashboard assembly (stats, table, sidebar) |
+| 58 | Complete SaaS Landing Page in Next.js | Full integration, SEO metadata, performance, polish |
 
 ## Getting Started
 
